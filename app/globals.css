@@ -119,6 +119,18 @@ select {
   background-repeat: repeat;
 }
 
+.hero-video-layer {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 42% 50%;
+  transform: translateZ(0);
+  transition: opacity 700ms ease;
+  will-change: opacity;
+}
+
 .bg-radial-story {
   background:
     radial-gradient(circle at 50% 44%, rgba(210, 171, 103, 0.14), transparent 30%),

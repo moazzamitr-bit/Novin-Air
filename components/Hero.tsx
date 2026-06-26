@@ -2,8 +2,8 @@
 
 import { motion } from "framer-motion";
 import { ArrowLeft, Compass } from "lucide-react";
-import Image from "next/image";
-import { assetPath, patternStyle } from "@/lib/assets";
+import { patternStyle } from "@/lib/assets";
+import { HeroVideo } from "./HeroVideo";
 import { LuxuryButton } from "./LuxuryButton";
 
 const stats = [
@@ -18,14 +18,7 @@ export function Hero() {
       id="home"
       className="relative isolate min-h-[760px] overflow-hidden bg-novin-obsidian pt-24 md:min-h-[840px] md:pt-28"
     >
-      <Image
-        src={assetPath("/images/hero-black-aircraft-generated.png")}
-        alt="هواپیمای مشکی نوین‌ایر روی باند مرطوب فرودگاه"
-        fill
-        priority
-        sizes="100vw"
-        className="object-cover object-[42%_50%]"
-      />
+      <HeroVideo />
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(4,7,10,0.10),rgba(4,7,10,0.34)_43%,rgba(4,7,10,0.86)_78%)]" />
       <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(4,7,10,0.16)_0%,rgba(4,7,10,0.05)_38%,rgba(4,7,10,0.5)_72%,#04070a_100%)]" />
       <div className="absolute inset-0 opacity-[0.16] pattern-bg" style={patternStyle()} />
